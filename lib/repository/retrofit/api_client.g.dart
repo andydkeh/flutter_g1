@@ -14,7 +14,7 @@ class _ApiClient implements ApiClient {
 
   final Dio _dio;
 
-  String baseUrl;
+  String? baseUrl;
 
   @override
   Future<ResponseData> getUsers() async {

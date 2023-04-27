@@ -9,7 +9,8 @@ class User {
   String created_at;
   String updated_at;
 
-  User({this.id, this.name, this.email,this.gender, this.status, this.created_at, this.updated_at});
+  User({required this.id, required this.name, required this.email, required this.gender, 
+  required this.status, required this.created_at, required this.updated_at});
 
   factory User.fromJson(Map<String, dynamic> json) {
     return User(

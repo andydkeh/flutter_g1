@@ -4,8 +4,8 @@ import 'package:flutter_api_with_retrofit/repository/retrofit/api_client.dart';
 
 class AppRepository {
 
-  ApiClient _apiRequest;
-  Dio dio;
+  ApiClient? _apiRequest;
+  late Dio dio;
 
   AppRepository() {
     dio = Dio();
